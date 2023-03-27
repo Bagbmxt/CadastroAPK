@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context=".Cadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <!--editText for name input-->
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_text_fields_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Digite o Seu Nome :"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorTextSecondary"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <!--editText for phone input-->
+        <EditText
+            android:id="@+id/editCPF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_credit_card_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Digite o Seu CPF :"
+            android:inputType="number|phone"
+            android:digits="123.456.789-00"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorTextSecondary"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <!--editText for email input-->
+        <EditText
+            android:id="@+id/editTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input_field"
+            android:drawableStart="@drawable/baseline_phone_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Digite o Seu Telefone :"
+            android:inputType="number|phone"
+            android:digits="123.456.789-00"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorTextSecondary"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="100dp"
+            android:onClick="salvar"
+            android:text="SALVAR" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context=".Cadastro">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="Digite o Seu Nome :"
+                android:text=""
+                android:layout_marginEnd="100dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editCPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Digite o Seu CPF :"
+                android:text=""
+                android:layout_marginEnd="100dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Digite o Seu Telefone :"
+                android:text=""
+                android:layout_marginEnd="100dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="salvar"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="200dp"
+            android:text="SALVAR" />
+
+    </LinearLayout>
+</ScrollView>
+-->
+
+
